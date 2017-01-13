@@ -7,12 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        crearPersona();
-
-    }
-
-
-    public static Persona crearPersona() {
         Persona p;
 
         Scanner s = new Scanner(System.in);
@@ -23,12 +17,17 @@ public class Main {
 
         try {
             p = new Persona(n);
-            return p;
+
+            int sss = 4/0;
+
+
+
         } catch (NombreException ex) {
             System.out.println(ex);
 
+        }catch (ArithmeticException ex){
+            System.out.println("Exception dd");
         }
-
 
     }
 

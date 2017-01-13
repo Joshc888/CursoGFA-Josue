@@ -12,6 +12,7 @@ public abstract class Empleado extends Persona {
         super(nombre, apellido, edad);
         this.cveEmpleado = cveEmpleado;
         this.salario = salario;
+        trabajar();
     }
 
     public abstract void trabajar();

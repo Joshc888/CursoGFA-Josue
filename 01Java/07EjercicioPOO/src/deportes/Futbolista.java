@@ -2,7 +2,7 @@ package deportes;
 
 import persona.Persona;
 
-public class Futbolista extends Persona {
+public class Futbolista extends Persona implements Deporte {
     private String posicion;
     private int dorsal;
 
@@ -13,6 +13,19 @@ public class Futbolista extends Persona {
         this.dorsal = dorsal;
     }
 
+
+    @Override
+    public void jugar(){
+        System.out.println("Juega un partido");
+    }
+    @Override
+    public void viajar(){
+        System.out.println("Viaja al estadio");
+    }
+    @Override
+    public void entrenar(){
+        System.out.println("Cardio...");
+    }
 
     @Override
     public void hablar(){

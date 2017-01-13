@@ -1,17 +1,42 @@
+import deportes.Boxeador;
+import deportes.Deporte;
 import deportes.Futbolista;
 import oficina.Desarrollador;
 import oficina.Operador;
 import persona.Persona;
 
 public class Main {
+    public static void pruebaInterfaz(Deporte d){
+        d.viajar();
+
+    }
+    public static void pruebaHerencia(Persona p){
+        p.hablar();
+
+    }
 
     public static void main(String[] args){
 
+
+        Futbolista f = new Futbolista("Juan","Lopez",21,
+                "Delantero",43);
+        Boxeador b = new Boxeador("Jose","Ramirez",33,
+                "Pluma");
+
+        pruebaInterfaz(f);
+        pruebaInterfaz(b);
+
+        pruebaHerencia(f);
+        pruebaHerencia(b);
+
+        /*
         Desarrollador d = new Desarrollador("Jose","Lopez",
                 34,9324,2.0f);
         Operador o = new Operador("Luis","Suarez",43,
                 9431,2.0f);
+        */
 
+        /*
         System.out.println("Primero ");
         d.trabajar();
         System.out.println("Y despues ");
@@ -21,7 +46,7 @@ public class Main {
         o.trabajar();
         System.out.println("Y despues ");
         o.transporteTorta();
-
+*/
 
 
         /*
