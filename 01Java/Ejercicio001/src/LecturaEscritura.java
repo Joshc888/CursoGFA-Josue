@@ -57,12 +57,15 @@ public class LecturaEscritura {
     public static void escribirFormato(String url, String[] lineas){
      try {
 
-         salida = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(url),"UTF-8"));
+         salida = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(url,true),"UTF-8"));
 
          for (String linea : lineas){
 
              try{
+
+
                  salida.write(linea + "\n");
+
              }catch (IOException ex){
                  System.out.println(ex.getMessage());
              }
